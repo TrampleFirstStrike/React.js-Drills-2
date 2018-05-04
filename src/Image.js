@@ -1,16 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Image from './Image';
+import React from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Image myImage={ "https://http.cat/409" } />
-      </div>
-    );
-  }
+export default function Image( props ) {
+  return (
+    <div>
+      <img src={ props.myImage } alt="" />
+    </div>
+  )
 }
-
-export default App;
